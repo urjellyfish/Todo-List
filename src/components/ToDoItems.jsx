@@ -10,7 +10,7 @@ const ToDoItems = ({text, id, isComplete, deleteTodo, toggle}) => {
         <p className={`text-slate-700 ml-4 text-[17px] ${isComplete ? "line-through" : ""}`}>{text}</p>
       </div>
 
-      <img onClick={()=>{deleteTodo(id)}} className='w-5 cursor-pointer' src={delete_icon} alt="delete" />
+      <img onClick={()=>{deleteTodo(id)}} className='cursor-pointer' src={delete_icon} alt="delete" />
     </div>
   )
 }
